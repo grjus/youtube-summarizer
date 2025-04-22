@@ -4,7 +4,7 @@ from mypy_boto3_bedrock_runtime.type_defs import ToolSpecificationTypeDef, Messa
     InferenceConfigurationTypeDef, ToolConfigurationTypeDef, SystemContentBlockTypeDef
 from pydantic import BaseModel
 
-from app_types import YoutubeSummaryResponse
+from src.app_types import YoutubeSummaryResponse
 
 MODEL_ID = "eu.anthropic.claude-3-7-sonnet-20250219-v1:0"
 

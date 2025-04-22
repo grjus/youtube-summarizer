@@ -7,10 +7,10 @@ import boto3
 from loguru import logger
 from mypy_boto3_bedrock_runtime import BedrockRuntimeClient
 
-from app_types import YoutubeSummaryResponse, YoutubeSummary
-from prompt import MODEL_ID, get_user_prompt, get_system_prompt, INFERENCE_CONFIG, TOOL_CONFIGURATION, TOOL_NAME
-from secrets import get_secret
-from youtube import VideoDetails, get_video_details
+from src.app_types import YoutubeSummaryResponse, YoutubeSummary
+from src.prompt import MODEL_ID, get_user_prompt, get_system_prompt, INFERENCE_CONFIG, TOOL_CONFIGURATION, TOOL_NAME
+from src.secrets import get_secret
+from src.youtube import VideoDetails, get_video_details
 
 client: BedrockRuntimeClient = boto3.client('bedrock-runtime', region_name='eu-west-1')
 
