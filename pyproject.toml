@@ -1,0 +1,14 @@
+[project]
+name = "youtube-summarizer"
+version = "0.1.0"
+description = "Summarizer for youtube videos"
+readme = "README.md"
+requires-python = ">=3.12.4"
+dependencies = [
+    "boto3>=1.37.37",
+    "boto3-stubs-lite[bedrock-runtime,secretsmanager]>=1.37.37",
+    "google-api-python-client>=2.167.0",
+    "loguru>=0.7.3",
+    "pydantic>=2.11.3",
+    "youtube-transcript-api>=1.0.3",
+]
